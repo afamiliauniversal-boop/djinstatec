@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="D&J INSTATEC – Engenharia Elétrica e Automação Residencial e Predial em São Paulo/SP. Instalações elétricas, câmeras, automação e muito mais." />
+  <meta name="keywords" content="eletricista residencial São Paulo, automação residencial SP, instalação câmeras segurança, elétrica predial, CFTV São Paulo, D&J Instatec" />
+  <meta name="author" content="D&J INSTATEC" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="D&J INSTATEC – Engenharia Elétrica e Automação" />
+  <meta property="og:description" content="Energia e tecnologia na sua medida. Atendemos São Paulo e região." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <title>D&J INSTATEC – Engenharia Elétrica e Automação</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- CANVAS PARTÍCULAS -->
+<canvas id="canvas-bg"></canvas>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav class="navbar" role="navigation" aria-label="Menu principal">
+  <a class="nav-logo" href="#hero">
+    <img src="images/logo.png" alt="D&J INSTATEC Logo" />
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#diferenciais">Diferenciais</a></li>
+    <li><a href="#portfolio">Portfólio</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+    <li><a href="#contato" class="nav-cta">Orçamento</a></li>
+  </ul>
+
+  <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+
+  <div class="container" style="display:flex; flex-direction:column; align-items:center;">
+    <div class="hero-content">
+      <div class="hero-badge">● SISTEMA ONLINE — SÃO PAULO / SP</div>
+
+      <h1 class="hero-titulo">
+        Energia e Tecnologia<br>
+        <span>Na Sua Medida</span>
+      </h1>
+
+      <p class="hero-subtitulo">D&amp;J INSTATEC — Engenharia Elétrica</p>
+
+      <p class="hero-texto">
+        Soluções completas em elétrica residencial, predial e automação.<br>
+        Atendimento técnico especializado em São Paulo e região metropolitana.
+      </p>
+
+      <div class="hero-btns">
+        <a href="https://wa.me/5511992137770?text=Olá,%20gostaria%20de%20um%20orçamento!" target="_blank" class="btn-primario">
+          💬 Peça um Orçamento
+        </a>
+        <a href="#servicos" class="btn-secundario">
+          ⚡ Ver Serviços
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat-item">
+        <strong class="stat-num" data-count="200" data-suffix="+">0+</strong>
+        <span class="stat-label">Projetos Realizados</span>
+      </div>
+      <div class="stat-item">
+        <strong class="stat-num" data-count="5" data-suffix=" anos">0 anos</strong>
+        <span class="stat-label">de Experiência</span>
+      </div>
+      <div class="stat-item">
+        <strong class="stat-num" data-count="100" data-suffix="%">0%</strong>
+        <span class="stat-label">Clientes Satisfeitos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SOBRE
+══════════════════════════════════════════ -->
+<section id="sobre">
+  <div class="container sobre-grid">
+
+    <div class="sobre-visual reveal">
+      <div class="sobre-card-img">
+        <img src="images/logo.png" alt="D&J INSTATEC" style="object-fit:contain; padding:2rem;" />
+        <div class="sobre-badge-flutuante">
+          <strong>MEI</strong>
+          <span>Empresa Ativa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sobre-texto reveal" data-delay="150">
+      <span class="section-tag">// sobre nós</span>
+      <h2 class="section-titulo">Quem é a <span>D&amp;J Instatec?</span></h2>
+      <div class="section-linha"></div>
+
+      <p class="section-desc" style="margin-bottom:1.2rem;">
+        Somos uma empresa MEI especializada em elétrica e automação residencial e predial,
+        atuando em São Paulo e região metropolitana. Fundada com o propósito de oferecer
+        serviços técnicos de alta qualidade com segurança e responsabilidade.
+      </p>
+      <p class="section-desc" style="margin-bottom:1.5rem;">
+        Nosso responsável técnico é eletrotécnico, cursante de Engenharia Elétrica,
+        com formação em Mecânica Geral e Eletrônica — além de conhecimento em
+        Desenho Técnico e AutoCAD. Uma combinação que garante precisão em cada projeto.
+      </p>
+
+      <div class="sobre-formacoes">
+        <span class="tag-formacao">Eletrotécnico</span>
+        <span class="tag-formacao">Engenharia Elétrica</span>
+        <span class="tag-formacao">Técnico em Eletrônica</span>
+        <span class="tag-formacao">Técnico em Mecânica</span>
+        <span class="tag-formacao">AutoCAD</span>
+        <span class="tag-formacao">Desenho Técnico</span>
+        <span class="tag-formacao">NR-10</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SERVIÇOS
+══════════════════════════════════════════ -->
+<section id="servicos">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:0.5rem;" class="reveal">
+      <span class="section-tag">// o que fazemos</span>
+      <h2 class="section-titulo">Nossos <span>Serviços</span></h2>
+      <div class="section-linha" style="margin:0 auto 1rem;"></div>
+      <p class="section-desc" style="margin:0 auto;">
+        Soluções técnicas completas para residências, condomínios e empresas.
+      </p>
+    </div>
+
+    <div class="servicos-grid">
+
+      <div class="servico-card reveal" data-delay="0">
+        <span class="servico-num">01</span>
+        <span class="servico-icone">⚡</span>
+        <h3 class="servico-nome">Instalações Elétricas</h3>
+        <p class="servico-desc">Instalações residenciais, comerciais e prediais com segurança e conformidade com as normas técnicas ABNT.</p>
+      </div>
+
+      <div class="servico-card reveal" data-delay="80">
+        <span class="servico-num">02</span>
+        <span class="servico-icone">🔧</span>
+        <h3 class="servico-nome">Manutenção Elétrica</h3>
+        <p class="servico-desc">Manutenção preventiva e corretiva em instalações residenciais e prediais. Identificamos e resolvemos falhas com agilidade.</p>
+      </div>
+
+      <div class="servico-card reveal" data-delay="160">
+        <span class="servico-num">03</span>
+        <span class="servico-icone">🏠</span>
+        <h3 class="servico-nome">Automação Residencial</h3>
+        <p class="servico-desc">Controle inteligente de iluminação, climatização, áudio e segurança. Sua casa conectada e automatizada.</p>
+      </div>
+
+      <div class="servico-card reveal" data-delay="0">
+        <span class="servico-num">04</span>
+        <span class="servico-icone">📷</span>
+        <h3 class="servico-nome">Câmeras e CFTV</h3>
+        <p class="servico-desc">Instalação de sistemas de monitoramento CFTV com acesso remoto via celular para residências e condomínios.</p>
+      </div>
+
+      <div class="servico-card reveal" data-delay="80">
+        <span class="servico-num">05</span>
+        <span class="servico-icone">💡</span>
+        <h3 class="servico-nome">Iluminação e Tomadas</h3>
+        <p class="servico-desc">Projetos de iluminação técnica e decorativa, instalação e substituição de tomadas e quadros de distribuição.</p>
+      </div>
+
+      <div class="servico-card reveal" data-delay="160">
+        <span class="servico-num">06</span>
+        <span class="servico-icone">☀️</span>
+        <h3 class="servico-nome">Energia Solar</h3>
+        <p class="servico-desc">Instalação de painéis fotovoltaicos para geração de energia renovável — economize na conta de luz e valorize seu imóvel.</p>
+      </div>
+
+      <div class="servico-card reveal" data-delay="0">
+        <span class="servico-num">07</span>
+        <span class="servico-icone">🔔</span>
+        <h3 class="servico-nome">Alarmes e Segurança</h3>
+        <p class="servico-desc">Instalação de sistemas de alarme residencial e predial integrados, com monitoramento e acionamento remoto.</p>
+      </div>
+
+      <div class="servico-card reveal" data-delay="80">
+        <span class="servico-num">08</span>
+        <span class="servico-icone">📋</span>
+        <h3 class="servico-nome">Projetos e Consultoria</h3>
+        <p class="servico-desc">Projetos elétricos em AutoCAD, consultoria em eficiência energética e laudo técnico com ART quando necessário.</p>
+      </div>
+
+      <div class="servico-card reveal" data-delay="160">
+        <span class="servico-num">09</span>
+        <span class="servico-icone">🔌</span>
+        <h3 class="servico-nome">Interfone e Portaria</h3>
+        <p class="servico-desc">Instalação e manutenção de interfones, portões automáticos e sistemas de acesso em condomínios e residências.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     DIFERENCIAIS
+══════════════════════════════════════════ -->
+<section id="diferenciais">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:0.5rem;" class="reveal">
+      <span class="section-tag">// por que nos escolher</span>
+      <h2 class="section-titulo">Nossos <span>Diferenciais</span></h2>
+      <div class="section-linha" style="margin:0 auto 1rem;"></div>
+    </div>
+
+    <div class="diferenciais-grid">
+
+      <div class="diferencial-item reveal" data-delay="0">
+        <span class="diferencial-icone">🛡️</span>
+        <h3 class="diferencial-titulo">Garantia de Serviço</h3>
+        <p class="diferencial-desc">90 dias de garantia em todos os serviços de instalação contra defeitos de execução.</p>
+      </div>
+
+      <div class="diferencial-item reveal" data-delay="80">
+        <span class="diferencial-icone">📜</span>
+        <h3 class="diferencial-titulo">Habilitação Técnica</h3>
+        <p class="diferencial-desc">Eletrotécnico habilitado com formação em Engenharia Elétrica e cursos técnicos complementares.</p>
+      </div>
+
+      <div class="diferencial-item reveal" data-delay="160">
+        <span class="diferencial-icone">💰</span>
+        <h3 class="diferencial-titulo">Orçamento Gratuito</h3>
+        <p class="diferencial-desc">Orçamento sem compromisso. Atendemos, avaliamos e apresentamos a proposta ideal para sua necessidade.</p>
+      </div>
+
+      <div class="diferencial-item reveal" data-delay="0">
+        <span class="diferencial-icone">⏱️</span>
+        <h3 class="diferencial-titulo">Prazo Cumprido</h3>
+        <p class="diferencial-desc">Comprometimento com o prazo combinado. Informamos cada etapa do serviço de forma transparente.</p>
+      </div>
+
+      <div class="diferencial-item reveal" data-delay="80">
+        <span class="diferencial-icone">📐</span>
+        <h3 class="diferencial-titulo">Projetos Técnicos</h3>
+        <p class="diferencial-desc">Elaboramos projetos elétricos em AutoCAD com precisão de engenharia, do residencial ao predial.</p>
+      </div>
+
+      <div class="diferencial-item reveal" data-delay="160">
+        <span class="diferencial-icone">📱</span>
+        <h3 class="diferencial-titulo">Atendimento Ágil</h3>
+        <p class="diferencial-desc">Retorno rápido via WhatsApp. Agendamento prático e acompanhamento durante toda a execução.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PORTFÓLIO
+══════════════════════════════════════════ -->
+<section id="portfolio">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:0.5rem;" class="reveal">
+      <span class="section-tag">// projetos realizados</span>
+      <h2 class="section-titulo">Nosso <span>Portfólio</span></h2>
+      <div class="section-linha" style="margin:0 auto 1rem;"></div>
+      <p class="section-desc" style="margin:0 auto 0.8rem;">
+        Trabalhos executados com qualidade e precisão técnica.
+      </p>
+      <p style="font-size:0.82rem; color:rgba(176,190,197,0.5); font-style:italic;">
+        Em breve: fotos reais dos nossos projetos. Adicione suas imagens na pasta /images.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card reveal">
+        <div class="portfolio-placeholder">
+          📷 <span>Sistema CFTV — Condomínio</span>
+        </div>
+        <div class="portfolio-overlay">
+          <h3>Sistema de Monitoramento CFTV</h3>
+          <p>// câmeras · DVR · acesso remoto</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-delay="80">
+        <div class="portfolio-placeholder">
+          ⚡ <span>Quadro Elétrico — Residencial</span>
+        </div>
+        <div class="portfolio-overlay">
+          <h3>Instalação de Quadro de Distribuição</h3>
+          <p>// elétrica · NBR 5410 · residencial</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-delay="160">
+        <div class="portfolio-placeholder">
+          🏠 <span>Automação — Residencial</span>
+        </div>
+        <div class="portfolio-overlay">
+          <h3>Automação Residencial Completa</h3>
+          <p>// iluminação · climatização · smart home</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal">
+        <div class="portfolio-placeholder">
+          ☀️ <span>Energia Solar — Residencial</span>
+        </div>
+        <div class="portfolio-overlay">
+          <h3>Instalação de Painel Solar</h3>
+          <p>// fotovoltaico · eficiência energética</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-delay="80">
+        <div class="portfolio-placeholder">
+          💡 <span>Iluminação — Comercial</span>
+        </div>
+        <div class="portfolio-overlay">
+          <h3>Projeto de Iluminação Técnica</h3>
+          <p>// led · projeto · comercial</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal" data-delay="160">
+        <div class="portfolio-placeholder">
+          🔌 <span>Infraestrutura — Predial</span>
+        </div>
+        <div class="portfolio-overlay">
+          <h3>Infraestrutura Elétrica Predial</h3>
+          <p>// condomínio · passagem · organização</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     DEPOIMENTOS
+══════════════════════════════════════════ -->
+<section id="depoimentos">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:0.5rem;" class="reveal">
+      <span class="section-tag">// o que dizem nossos clientes</span>
+      <h2 class="section-titulo">Depoimentos <span>Reais</span></h2>
+      <div class="section-linha" style="margin:0 auto 1rem;"></div>
+    </div>
+
+    <div class="depoimentos-slider reveal">
+      <div class="depoimentos-track">
+
+        <div class="depoimento-card">
+          <p class="depoimento-texto">
+            Serviço impecável! Instalaram o sistema de câmeras no condomínio com muito cuidado e organização. O técnico explicou tudo direitinho e o acesso pelo celular funciona perfeito.
+          </p>
+          <div class="depoimento-autor">
+            <div class="autor-avatar">E</div>
+            <div>
+              <div class="autor-nome">Elson M.</div>
+              <div class="autor-local">Condomínio — São Paulo/SP</div>
+              <div class="estrelas">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card">
+          <p class="depoimento-texto">
+            Contratei para fazer toda a elétrica do meu apartamento reformado. Trabalho limpo, cumpriu o prazo e o preço foi justo. Recomendo sem hesitar!
+          </p>
+          <div class="depoimento-autor">
+            <div class="autor-avatar">A</div>
+            <div>
+              <div class="autor-nome">Ana C.</div>
+              <div class="autor-local">Residencial — São Paulo/SP</div>
+              <div class="estrelas">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card">
+          <p class="depoimento-texto">
+            Muito profissional. Resolveu um problema elétrico que outros eletricistas não conseguiam identificar. Rápido, educado e com garantia no serviço.
+          </p>
+          <div class="depoimento-autor">
+            <div class="autor-avatar">R</div>
+            <div>
+              <div class="autor-nome">Roberto S.</div>
+              <div class="autor-local">Comercial — São Paulo/SP</div>
+              <div class="estrelas">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card">
+          <p class="depoimento-texto">
+            Instalou a automação da minha sala e quarto. Agora controlo tudo pelo celular. Serviço de qualidade, técnico muito competente e atencioso.
+          </p>
+          <div class="depoimento-autor">
+            <div class="autor-avatar">M</div>
+            <div>
+              <div class="autor-nome">Marina T.</div>
+              <div class="autor-local">Automação — São Paulo/SP</div>
+              <div class="estrelas">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="slider-btn" id="slider-prev" aria-label="Anterior">&#8592;</button>
+      <button class="slider-btn" id="slider-next" aria-label="Próximo">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTATO
+══════════════════════════════════════════ -->
+<section id="contato">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:3rem;" class="reveal">
+      <span class="section-tag">// fale conosco</span>
+      <h2 class="section-titulo">Solicite um <span>Orçamento</span></h2>
+      <div class="section-linha" style="margin:0 auto 1rem;"></div>
+      <p class="section-desc" style="margin:0 auto;">
+        Atendemos São Paulo e região metropolitana. Resposta rápida via WhatsApp.
+      </p>
+    </div>
+
+    <div class="contato-grid">
+
+      <div class="reveal">
+        <div class="contato-info-item">
+          <div class="contato-info-icone">📱</div>
+          <div>
+            <div class="contato-info-label">WhatsApp / Telefone</div>
+            <a href="https://wa.me/5511992137770" target="_blank" class="contato-info-valor" style="color:var(--verde-claro);">
+              (11) 99213-7770
+            </a>
+          </div>
+        </div>
+
+        <div class="contato-info-item">
+          <div class="contato-info-icone">✉️</div>
+          <div>
+            <div class="contato-info-label">E-mail</div>
+            <a href="mailto:djinstatec@gmail.com" class="contato-info-valor" style="color:var(--verde-claro);">
+              djinstatec@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contato-info-item">
+          <div class="contato-info-icone">📍</div>
+          <div>
+            <div class="contato-info-label">Atendimento</div>
+            <div class="contato-info-valor">São Paulo / SP e Grande SP</div>
+          </div>
+        </div>
+
+        <div class="contato-info-item">
+          <div class="contato-info-icone">🌐</div>
+          <div>
+            <div class="contato-info-label">Site</div>
+            <a href="https://djinstatec.negocio.site/" target="_blank" class="contato-info-valor" style="color:var(--verde-claro);">
+              djinstatec.negocio.site
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;">
+          <p style="font-family:var(--font-titulo); font-size:0.85rem; color:var(--cinza-texto); letter-spacing:1px; margin-bottom:0.8rem; text-transform:uppercase;">
+            Redes Sociais
+          </p>
+          <div style="display:flex; gap:0.8rem;">
+            <a href="#" target="_blank" style="width:40px;height:40px;border-radius:8px;background:rgba(46,125,50,0.12);border:1px solid rgba(46,125,50,0.3);display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:all 0.3s ease;" title="Instagram">📸</a>
+            <a href="https://wa.me/5511992137770" target="_blank" style="width:40px;height:40px;border-radius:8px;background:rgba(37,211,102,0.12);border:1px solid rgba(37,211,102,0.3);display:flex;align-items:center;justify-content:center;font-size:1.2rem;transition:all 0.3s ease;" title="WhatsApp">💬</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-contato reveal" data-delay="150">
+        <form id="form-contato" novalidate>
+          <div class="form-grupo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="servico">Serviço de interesse</label>
+            <select id="servico" name="servico">
+              <option value="">Selecione um serviço</option>
+              <option>Instalação Elétrica Residencial</option>
+              <option>Instalação Elétrica Predial/Comercial</option>
+              <option>Câmeras e Sistema CFTV</option>
+              <option>Automação Residencial</option>
+              <option>Energia Solar</option>
+              <option>Manutenção Elétrica</option>
+              <option>Alarme e Segurança</option>
+              <option>Projeto Elétrico</option>
+              <option>Outros</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem (opcional)</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Descreva brevemente o que precisa..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primario">
+            💬 Enviar pelo WhatsApp
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="D&J INSTATEC" />
+      <p class="footer-desc">
+        Energia e tecnologia na sua medida.<br>
+        Elétrica residencial, predial e automação<br>
+        em São Paulo e Grande SP.
+      </p>
+    </div>
+
+    <div>
+      <p class="footer-titulo">Serviços</p>
+      <nav class="footer-links" aria-label="Links de serviços">
+        <a href="#servicos">Instalações Elétricas</a>
+        <a href="#servicos">Câmeras e CFTV</a>
+        <a href="#servicos">Automação Residencial</a>
+        <a href="#servicos">Energia Solar</a>
+        <a href="#servicos">Alarmes e Segurança</a>
+        <a href="#servicos">Projetos Elétricos</a>
+      </nav>
+    </div>
+
+    <div>
+      <p class="footer-titulo">Contato</p>
+      <div class="footer-contato">
+        <p>📱 (11) 99213-7770</p>
+        <p>✉️ djinstatec@gmail.com</p>
+        <p>📍 São Paulo / SP</p>
+        <p>🌐 djinstatec.negocio.site</p>
+        <p style="margin-top:0.8rem; font-size:0.78rem; color:rgba(176,190,197,0.4);">
+          CNPJ: 18.184.811/0001-55
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2024 D&amp;J INSTATEC. Todos os direitos reservados.</span>
+    <span>Feito com <span style="color:var(--laranja);">♥</span> em São Paulo</span>
+  </div>
+</footer>
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5511992137770?text=Olá,%20D%26J%20Instatec!%20Gostaria%20de%20um%20orçamento."
+   target="_blank"
+   class="whatsapp-float"
+   aria-label="Fale no WhatsApp"
+   title="Fale conosco no WhatsApp">
+  💬
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
