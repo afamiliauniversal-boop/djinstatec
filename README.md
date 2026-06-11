@@ -26,8 +26,11 @@ Djinstatec/
 ├── images/
 │   ├── logo.png            ← logo (banner) usado no header e no footer
 │   ├── logo_icon.jpg       ← ícone/favicon
-│   └── servicos/           ← 287 fotos reais dos serviços (carrossel do hero)
+│   └── servicos/           ← 218 fotos reais dos serviços (carrossel do hero)
 │       └── s_0001.jpg ...
+├── videos/
+│   ├── hero.mp4            ← versão em vídeo do slideshow (mesmas fotos, p/ postagem)
+│   └── hero-poster.jpg
 ├── .github/
 │   └── workflows/
 │       └── static.yml      ← deploy automático no GitHub Pages a cada push na main

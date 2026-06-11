@@ -76,7 +76,7 @@ document.getElementById('waForm').addEventListener('submit',function(ev){
 (function(){
   const wrap=document.getElementById('heroCarousel');
   if(!wrap)return;
-  const TOTAL=287, INTERVAL=650; /* ms por foto */
+  const TOTAL=218, INTERVAL=650; /* ms por foto */
   const pad=n=>String(n).padStart(4,'0');
   const src=i=>`images/servicos/s_${pad(i)}.jpg`;
   const layers=wrap.querySelectorAll('.hc-img');
