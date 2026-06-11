@@ -25,10 +25,9 @@ Djinstatec/
 │   └── main.js             ← menu, scroll reveal, contadores, filtro do portfólio, formulário→WhatsApp
 ├── images/
 │   ├── logo.png            ← logo (banner) usado no header e no footer
-│   └── logo_icon.jpg       ← ícone/favicon
-├── videos/
-│   ├── hero.mp4            ← vídeo do hero (slideshow de 43 fotos reais, ~30s)
-│   └── hero-poster.jpg     ← imagem de fallback/carregamento do vídeo
+│   ├── logo_icon.jpg       ← ícone/favicon
+│   └── servicos/           ← 287 fotos reais dos serviços (carrossel do hero)
+│       └── s_0001.jpg ...
 ├── .github/
 │   └── workflows/
 │       └── static.yml      ← deploy automático no GitHub Pages a cada push na main
@@ -84,7 +83,7 @@ Iluminação e Tomadas · Energia Solar · Alarmes e Segurança · Projetos e Co
 | Contadores (projetos, anos, %, garantia) | Atributos `data-target` na seção STATS do `index.html` |
 | Depoimentos | Seção `<!-- DEPOIMENTOS -->` no `index.html` |
 | Cores do tema | Bloco `:root` no topo de `css/style.css` |
-| Vídeo do hero | `<video>` dentro de `.hero-img` no `index.html` (arquivo `videos/hero.mp4`) |
+| Carrossel do hero | `.hero-img#heroCarousel` no `index.html` + função no `js/main.js` (fotos em `images/servicos/`, total e velocidade nas constantes `TOTAL`/`INTERVAL`) |
 | Logo | Substituir `images/logo.png` (mantendo o nome) |
 
 ---

@@ -71,3 +71,23 @@ document.getElementById('waForm').addEventListener('submit',function(ev){
   texto+=`%0AGostaria de um orçamento grátis. 🙏`;
   window.open(`https://wa.me/${WA_NUMBER}?text=${texto}`,'_blank');
 });
+
+/* ===== Carrossel do hero (todas as fotos de serviço, tempo regular) ===== */
+(function(){
+  const wrap=document.getElementById('heroCarousel');
+  if(!wrap)return;
+  const TOTAL=287, INTERVAL=650; /* ms por foto */
+  const pad=n=>String(n).padStart(4,'0');
+  const src=i=>`images/servicos/s_${pad(i)}.jpg`;
+  const layers=wrap.querySelectorAll('.hc-img');
+  let cur=1, front=0;
+  layers[0].src=src(1);
+  layers[0].classList.add('active');
+  function show(){
+    const ni=cur%TOTAL+1, back=1-front, img=layers[back], pre=new Image();
+    pre.onload=()=>{img.src=pre.src;img.classList.add('active');layers[front].classList.remove('active');front=back;cur=ni;};
+    pre.onerror=()=>{cur=ni;};
+    pre.src=src(ni);
+  }
+  setInterval(show, INTERVAL);
+})();
