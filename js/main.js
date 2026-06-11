@@ -72,7 +72,7 @@ document.getElementById('waForm').addEventListener('submit',function(ev){
   window.open(`https://wa.me/${WA_NUMBER}?text=${texto}`,'_blank');
 });
 
-/* ===== Carrossel do hero (todas as fotos de serviço, tempo regular) ===== */
+/* ===== Carrossel do hero (fotos em ordem ALEATÓRIA, tempo regular) ===== */
 (function(){
   const wrap=document.getElementById('heroCarousel');
   if(!wrap)return;
@@ -80,13 +80,16 @@ document.getElementById('waForm').addEventListener('submit',function(ev){
   const pad=n=>String(n).padStart(4,'0');
   const src=i=>`images/servicos/s_${pad(i)}.jpg`;
   const layers=wrap.querySelectorAll('.hc-img');
-  let cur=1, front=0;
-  layers[0].src=src(1);
-  layers[0].classList.add('active');
+  /* embaralha UMA vez (Fisher-Yates) p/ não seguir a ordem da pasta; depois repete na mesma ordem */
+  const order=Array.from({length:TOTAL},(_,k)=>k+1);
+  for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=order[i];order[i]=order[j];order[j]=t;}
+  let pos=0, front=0;
+  layers[0].src=src(order[pos]); layers[0].classList.add('active'); pos++;
   function show(){
-    const ni=cur%TOTAL+1, back=1-front, img=layers[back], pre=new Image();
-    pre.onload=()=>{img.src=pre.src;img.classList.add('active');layers[front].classList.remove('active');front=back;cur=ni;};
-    pre.onerror=()=>{cur=ni;};
+    if(pos>=order.length)pos=0;
+    const ni=order[pos], back=1-front, img=layers[back], pre=new Image();
+    pre.onload=()=>{img.src=pre.src;img.classList.add('active');layers[front].classList.remove('active');front=back;pos++;};
+    pre.onerror=()=>{pos++;};
     pre.src=src(ni);
   }
   setInterval(show, INTERVAL);
