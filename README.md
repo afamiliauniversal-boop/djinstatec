@@ -26,6 +26,9 @@ Djinstatec/
 ├── images/
 │   ├── logo.png            ← logo (banner) usado no header e no footer
 │   └── logo_icon.jpg       ← ícone/favicon
+├── videos/
+│   ├── hero.mp4            ← vídeo do hero (slideshow de 43 fotos reais, ~30s)
+│   └── hero-poster.jpg     ← imagem de fallback/carregamento do vídeo
 ├── .github/
 │   └── workflows/
 │       └── static.yml      ← deploy automático no GitHub Pages a cada push na main
@@ -81,7 +84,7 @@ Iluminação e Tomadas · Energia Solar · Alarmes e Segurança · Projetos e Co
 | Contadores (projetos, anos, %, garantia) | Atributos `data-target` na seção STATS do `index.html` |
 | Depoimentos | Seção `<!-- DEPOIMENTOS -->` no `index.html` |
 | Cores do tema | Bloco `:root` no topo de `css/style.css` |
-| Imagem do hero | `<img>` dentro de `.hero-img` no `index.html` (URL do Unsplash) |
+| Vídeo do hero | `<video>` dentro de `.hero-img` no `index.html` (arquivo `videos/hero.mp4`) |
 | Logo | Substituir `images/logo.png` (mantendo o nome) |
 
 ---
